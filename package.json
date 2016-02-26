@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "flightplan": "^0.6.9"
+    "babel-preset-es2015": "^6.5.0",
+    "bootstrap": "^3.3.6",
+    "compass": "^0.1.1",
+    "flightplan": "^0.6.9",
+    "node-sass": "^3.4.2",
+    "webpack": "^1.12.14"
   },
   "devDependencies": {},
   "scripts": {
