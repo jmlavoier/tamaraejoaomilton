@@ -8,12 +8,21 @@ module.exports = {
         path: __dirname + "/dist/js",
         filename: "bundle.js"
     },
+    plugins: [
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jquery: "jQuery",
+            "windows.jQuery": "jquery"
+        }), 
+
+    ],
     module: {
 		loaders: [
 			{
 				test: /\.js$/,
 				loader: 'babel',
 				query: {
+					plugins: ['transform-decorators-legacy'],
 					presets: ['es2015']
 				}
 			},
@@ -23,5 +32,4 @@ module.exports = {
 			}
 		]
 	}
-
 }

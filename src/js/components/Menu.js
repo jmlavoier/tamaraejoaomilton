@@ -1,11 +1,7 @@
 class Menu {
 	constructor(){
-		console.info("init Menu()");
-		this.initMenu();
-	}
-
-	initMenu(){
-		console.log("menu init->");
+		
+		console.info("init Menu");
 	}
 }
 

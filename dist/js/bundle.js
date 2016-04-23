@@ -61,8 +61,8 @@
 	var Main = function Main() {
 		_classCallCheck(this, Main);
 
-		console.info("init Main()");
 		new _Page2.default();
+		console.info("init Main");
 	};
 
 	new Main();
@@ -9941,9 +9941,9 @@
 		value: true
 	});
 
-	var _Menu = __webpack_require__(5);
+	var _Header = __webpack_require__(5);
 
-	var _Menu2 = _interopRequireDefault(_Menu);
+	var _Header2 = _interopRequireDefault(_Header);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -9952,17 +9952,18 @@
 	var Page = function Page() {
 		_classCallCheck(this, Page);
 
-		console.info("init Page()");
-		this.menu = new _Menu2.default();
+		this.header = new _Header2.default();
+
+		console.info("init Page");
 	};
 
 	exports.default = Page;
 
 /***/ },
 /* 5 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	/* WEBPACK VAR INJECTION */(function($) {"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
 		value: true
@@ -9970,27 +9971,99 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+	var _desc, _value, _class;
+
+	var _es7Autobinder = __webpack_require__(6);
+
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	var Menu = function () {
-		function Menu() {
-			_classCallCheck(this, Menu);
+	function _applyDecoratedDescriptor(target, property, decorators, descriptor, context) {
+		var desc = {};
+		Object['ke' + 'ys'](descriptor).forEach(function (key) {
+			desc[key] = descriptor[key];
+		});
+		desc.enumerable = !!desc.enumerable;
+		desc.configurable = !!desc.configurable;
 
-			console.info("init Menu()");
-			this.initMenu();
+		if ('value' in desc || desc.initializer) {
+			desc.writable = true;
 		}
 
-		_createClass(Menu, [{
-			key: "initMenu",
-			value: function initMenu() {
-				console.log("menu init->");
+		desc = decorators.slice().reverse().reduce(function (desc, decorator) {
+			return decorator(target, property, desc) || desc;
+		}, desc);
+
+		if (context && desc.initializer !== void 0) {
+			desc.value = desc.initializer ? desc.initializer.call(context) : void 0;
+			desc.initializer = undefined;
+		}
+
+		if (desc.initializer === void 0) {
+			Object['define' + 'Property'](target, property, desc);
+			desc = null;
+		}
+
+		return desc;
+	}
+
+	var Header = (_class = function () {
+		function Header() {
+			_classCallCheck(this, Header);
+
+			this.header = $(".header");
+
+			$(window).on("resize", this.initResponsiveHeader);
+
+			this.initResponsiveHeader();
+
+			console.info("init Header");
+		}
+
+		_createClass(Header, [{
+			key: "initResponsiveHeader",
+			value: function initResponsiveHeader() {
+				var screenWidth = screen.width;
+				var windowWidth = $(window).width();
+				var backgroundWidth = windowWidth + (200 - 100 * windowWidth / screenWidth) + 4 * Math.round(200 - 100 * windowWidth / screenWidth);
+
+				this.header.css({
+					"background-size": backgroundWidth + "px auto"
+				});
 			}
 		}]);
 
-		return Menu;
-	}();
+		return Header;
+	}(), (_applyDecoratedDescriptor(_class.prototype, "initResponsiveHeader", [_es7Autobinder.autobound], Object.getOwnPropertyDescriptor(_class.prototype, "initResponsiveHeader"), _class.prototype)), _class);
+	exports.default = Header;
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
-	exports.default = Menu;
+/***/ },
+/* 6 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports.autobound = autobound;
+
+	function autobound(target, name, descriptor) {
+	  var value = descriptor.value;
+
+	  return {
+	    configurable: true,
+	    get: function get() {
+	      var boundValue = value.bind(this);
+	      Object.defineProperty(this, name, {
+	        value: boundValue,
+	        configurable: true,
+	        writable: true
+	      });
+	      return boundValue;
+	    }
+	  };
+	}
 
 /***/ }
 /******/ ]);

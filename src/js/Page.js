@@ -1,9 +1,10 @@
-import Menu from "./components/Menu";
+import Header from "./components/Header";
 
 class Page {
 	constructor(){
-		console.info("init Page()");
-		this.menu = new Menu();
+		this.header = new Header();
+
+		console.info("init Page");
 	}
 }
 

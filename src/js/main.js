@@ -3,8 +3,8 @@ import Page from "./Page";
 
 class Main {
 	constructor(){
-		console.info("init Main()");
 		new Page();
+		console.info("init Main");
 	}
 }
 
