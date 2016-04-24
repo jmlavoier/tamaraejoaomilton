@@ -1,8 +1,9 @@
-import Header from "./components/Header";
+import Responsivity from "./components/Responsivity";
 
 class Page {
 	constructor(){
-		this.header = new Header();
+		this.header = new Responsivity();
+
 
 		console.info("init Page");
 	}

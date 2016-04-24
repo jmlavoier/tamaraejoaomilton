@@ -32,7 +32,9 @@ h3 {
 
 .header {
   background: #f1ebe4 url("../../dist/img/general/banner.jpg") no-repeat top center;
-  height: 600px; }
+  position: fixed;
+  width: 100%;
+  top: 0; }
   .header .content {
     position: relative;
     text-align: center;
@@ -59,11 +61,15 @@ h3 {
         display: block; }
 
 .container {
+  box-shadow: 0 8px 30px #3c3c3c;
+  background-color: #fff;
   width: auto;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  position: relative; }
   .container > div > div {
-    padding: 5px 40px 20px 40px; }
+    padding: 5px 40px 20px 40px;
+    position: relative; }
   .container .gifts .gift-list {
     text-align: center; }
     .container .gifts .gift-list > span {
@@ -77,6 +83,7 @@ h3 {
       display: block;
       padding: 20px;
       max-width: 300px;
+      min-height: 430px;
       background-color: #d5d5d5; }
       .container .gifts .gift-list > span:hover {
         background-color: #36b6d2; }
