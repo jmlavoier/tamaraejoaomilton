@@ -19,8 +19,16 @@
     	 url('../fonts/jennasue/JennaSue.svg#JennaSue') format('svg');
 }
 
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
 $font-jennasue: 'JennaSue';
 $color-default: #555;
+$color-blue: #36b6d2;
 $border-size-arrow: 3px;
 
 body {
@@ -90,6 +98,62 @@ h3 {
 	}
 }
 
-form{
-	padding: 10px 10px;
+.container {
+
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+
+	& > div > div {
+		padding: 5px 40px 20px 40px;
+	}
+
+	.gifts {
+		
+		.gift-list {
+			text-align: center;
+
+			& > span {
+				@include border-radius(15px);
+				margin-top: 20px;
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+				padding: 20px; 
+				max-width: 300px;
+				background-color: lighten($color-default, 50%);
+
+				&:hover {
+					background-color: $color-blue;
+				}
+			}
+
+			a {
+				text-decoration: none;
+				color: $color-default;
+
+				&:hover {
+					text-decoration: none;
+					color: $color-default;
+				}
+
+				&:visited {
+					text-decoration: none;
+					color: $color-default;
+				}
+			}
+
+			img {
+				@include border-radius(50%);
+			}
+			
+		}
+			
+	}
+
+	.we-two{
+		background-color: $color-default;
+		color: invert($color-default);
+	}
+
 }

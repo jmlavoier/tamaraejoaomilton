@@ -58,5 +58,42 @@ h3 {
         font-size: 90px;
         display: block; }
 
-form {
-  padding: 10px 10px; }
+.container {
+  width: auto;
+  margin-left: auto;
+  margin-right: auto; }
+  .container > div > div {
+    padding: 5px 40px 20px 40px; }
+  .container .gifts .gift-list {
+    text-align: center; }
+    .container .gifts .gift-list > span {
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      -ms-border-radius: 15px;
+      border-radius: 15px;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      padding: 20px;
+      max-width: 300px;
+      background-color: #d5d5d5; }
+      .container .gifts .gift-list > span:hover {
+        background-color: #36b6d2; }
+    .container .gifts .gift-list a {
+      text-decoration: none;
+      color: #555; }
+      .container .gifts .gift-list a:hover {
+        text-decoration: none;
+        color: #555; }
+      .container .gifts .gift-list a:visited {
+        text-decoration: none;
+        color: #555; }
+    .container .gifts .gift-list img {
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%; }
+  .container .we-two {
+    background-color: #555;
+    color: #aaaaaa; }

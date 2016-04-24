@@ -4,6 +4,7 @@ class Header {
 	constructor() {
 		this.header = $(".header");
 		this.overlay = $('.fill');
+		this.page = $('.page');
 
 		$(window).on("resize", this.initResponsiveHeader);
 
@@ -25,7 +26,15 @@ class Header {
 			opacity: opacity
 		});
 
-		console.log(backgroundWidth);
+		if (windowWidth > 800) {
+			this.page.css({
+				height: `${headerHeight}px`
+			});
+		} else {
+			this.page.css({
+				height: 'auto'
+			});
+		}
 
 		this.header.css({
 			height: `${headerHeight}px`
