@@ -14,7 +14,11 @@ module.exports = {
             jquery: "jQuery",
             "windows.jQuery": "jquery"
         }), 
-
+        new webpack.optimize.UglifyJsPlugin({
+		    compress: {
+		        warnings: false
+		    }
+		})
     ],
     module: {
 		loaders: [

@@ -4,7 +4,7 @@ import Page from "./Page";
 class Main {
 	constructor(){
 		new Page();
-		console.info("init Main");
+		console.info("init Main"); 
 	}
 }
 
