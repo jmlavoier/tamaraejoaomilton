@@ -1,9 +1,12 @@
+<?php 
+$tomorrow  = mktime (0, 0, 0, date("m")  , date("d")+1, date("Y"));
+?>
 <!DOCTYPE html>
 <html>
 	<head>
 		<title>Tamara & João Milton</title>
 		<meta charset="UTF-8">
-		<meta http-equiv="Cache-control" content="public">
+		<meta http-equiv="expires" content="<?php echo date(DATE_RFC850, $tomorrow) ?>">
 		<meta name="viewport" content="width=device-width, user-scalable=no">
 		<link rel="stylesheet" type="text/css" href="dist/plugins/bootstrap/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="dist/css/main.css">
