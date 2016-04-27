@@ -32,7 +32,7 @@ class Responsivity {
 
 		if (this.windowWidth > 800) {
 			this.page.css({
-				height: `${this.headerHeight}px`
+				minHeight: `${this.headerHeight}px`
 			});
 		} else {
 			this.page.css({

@@ -12,7 +12,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Verdana, Arial; }
+  font-family: Verdana, Arial;
+  font-size: 16px; }
 
 .jennasue {
   font-family: "JennaSue"; }
@@ -83,7 +84,6 @@ h3 {
       display: block;
       padding: 20px;
       max-width: 300px;
-      min-height: 430px;
       background-color: #d5d5d5; }
       .container .gifts .gift-list > span:hover {
         background-color: #36b6d2; }
@@ -97,10 +97,7 @@ h3 {
         text-decoration: none;
         color: #555; }
     .container .gifts .gift-list img {
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      -ms-border-radius: 50%;
-      border-radius: 50%; }
+      display: inline-block; }
   .container .we-two {
     background-color: #555;
     color: #aaaaaa; }
