@@ -26,9 +26,34 @@ $tomorrow  = mktime (0, 0, 0, date("m")  , date("d")+1, date("Y"));
 			</div>
 		</div>
 		<div class="container">
+			<!--
+			<div class="row page wedding">
+				<div class="col-sm-12">
+					<h1 class="title">Ta chegando</h2>
+					<div class="left-time">
+						<span class="days">
+							<span class="n">89</span>
+							<span class="l">dias</span>
+						</span>
+						<span class="hours">
+							<span class="n">55</span>
+							<span class="l">horas</span>
+						</span>
+						<span class="minuts">
+							<span class="n">45</span>
+							<span class="l">minutos</span>
+						</span>
+						<span class="seconds">
+							<span class="n">76</span>
+							<span class="l">segundos</span>
+						</span>
+					</div>
+				</div>
+			</div>
+			-->
 			<div class="row page gifts">
 				<div class="col-sm-12 ">
-					<h2>LISTA DE PRESENTES</h2>
+					<h1 class="title">LISTA DE PRESENTES</h2>
 					<p>Escolha a loja que mais tem a ver com você, e nos ajude a começar a nossa vida juntos.</p>
 					<div class="col-sm-4 gift-list">
 						<span>
@@ -53,12 +78,18 @@ $tomorrow  = mktime (0, 0, 0, date("m")  , date("d")+1, date("Y"));
 					</div>	
 				</div>
 			</div>
+			<!-- 
 			<div class="row page we-two">
 				<div class="col-sm-12 ">
 					<h2>NOS DOIS</h2>
 					<div class="col-sm-6">
 						<h3>HISTÓRIA</h3>
-						<p> Aqui vai ter um pouco da nossa hitória, não vou escrever agora porque já é 1:51AM e estou cansado demais precisando dormir.</p>
+						<p> 
+							Sinceramente sempre quis uma história como nos contos de princesas e adivinhem a minha foi exatamente assim... Brincadeirinha, nao foi como nos contos, foi melhor, pois teve uma boa pitada de realidade! Bom vamos ao que interessa, à nossa história...
+							Foi em Marco de 2012 que nosa encontramos de uma forma nada convencional, rsrs... Tinhamos uma amiga em comum e essa amiga me chamou para ir no monte orar com ela e a sua turma. Pensei: -Nossa vou facil... E lá estava eu e a Adelita e mais uma galera muito gente boa, buscando a Deus; de repente ele chega e eu digo: - Quem é ele? E ele diz: - Caramba quem é essa menina... que linda, que voz... É ela.... é ela! s2 s2
+							Ele ficou apaixonado por mim! E essa é a história Fim! rsrsr
+					 
+						</p>
 					</div>
 					<div class="col-sm-6">
 						<h3>PLAYLIST</h3>
@@ -93,6 +124,7 @@ $tomorrow  = mktime (0, 0, 0, date("m")  , date("d")+1, date("Y"));
 					<p> MAPA Gooooogle Maps</p>
 				</div>
 			</div>
+			-->
 		</div>
 
 		<script type="text/javascript" src="dist/js/bundle.js" charset="utf-8"></script>

@@ -1,6 +1,6 @@
 import { autobound } from "es7-autobinder";
 
-class Responsivity {
+class Responsiveness {
 	constructor() {
 		this.header = $(".header");
 		this.overlay = $('.fill');
@@ -30,15 +30,15 @@ class Responsivity {
 			opacity: this.opacity
 		});
 
-		if (this.windowWidth > 800) {
-			this.page.css({
-				minHeight: `${this.headerHeight}px`
-			});
-		} else {
-			this.page.css({
-				height: 'auto'
-			});
-		}
+		// if (this.windowWidth > 800) {
+		// 	this.page.css({
+		// 		minHeight: `${this.headerHeight}px`
+		// 	});
+		// } else {
+		// 	this.page.css({
+		// 		height: 'auto'
+		// 	});
+		// }
 
 		this.container.css({
 			marginTop: `${this.headerHeight}px`
@@ -70,4 +70,4 @@ class Responsivity {
 	}
 }
 
-export default Responsivity;
+export default Responsiveness;
