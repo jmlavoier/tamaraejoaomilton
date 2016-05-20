@@ -26,31 +26,29 @@ $tomorrow  = mktime (0, 0, 0, date("m")  , date("d")+1, date("Y"));
 			</div>
 		</div>
 		<div class="container">
-			<!--
 			<div class="row page wedding">
 				<div class="col-sm-12">
 					<h1 class="title">Ta chegando</h2>
 					<div class="left-time">
 						<span class="days">
-							<span class="n">89</span>
+							<span class="n"></span>
 							<span class="l">dias</span>
 						</span>
 						<span class="hours">
-							<span class="n">55</span>
+							<span class="n"></span>
 							<span class="l">horas</span>
 						</span>
-						<span class="minuts">
-							<span class="n">45</span>
+						<span class="minutes">
+							<span class="n"></span>
 							<span class="l">minutos</span>
 						</span>
 						<span class="seconds">
-							<span class="n">76</span>
+							<span class="n"></span>
 							<span class="l">segundos</span>
 						</span>
 					</div>
 				</div>
 			</div>
-			-->
 			<div class="row page gifts">
 				<div class="col-sm-12 ">
 					<h1 class="title">LISTA DE PRESENTES</h2>
