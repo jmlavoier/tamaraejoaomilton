@@ -159,9 +159,9 @@ h3 {
 	}
 
 	.gifts {
+		text-align: center;
 		
 		.gift-list {
-			text-align: center;
 
 			& > span {
 				@include border-radius(15px);
@@ -203,7 +203,7 @@ h3 {
 
 	.map {
 		padding-bottom: 0;
-		
+
 		#map {
 			width: 100%;
 			height: 400px;
