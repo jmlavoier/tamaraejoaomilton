@@ -138,7 +138,7 @@ $tomorrow  = mktime (0, 0, 0, date("m")  , date("d")+1, date("Y"));
 					zoom: 16
 				});
 
-				var image = 'http://tamaraejoaomilton/dist/img/general/heart.png';
+				var image = 'http://tamaraejoaomilton.com.br/dist/img/general/heart.png';
 				var beachMarker = new google.maps.Marker({
 					position: {lat: -20.985723, lng: -47.657543},
 					map: map,
