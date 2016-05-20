@@ -76,6 +76,9 @@ $tomorrow  = mktime (0, 0, 0, date("m")  , date("d")+1, date("Y"));
 					</div>	
 				</div>
 			</div>
+			<div class="row page map">
+				<div id="map"></div>
+			</div>
 			<!-- 
 			<div class="row page we-two">
 				<div class="col-sm-12 ">
@@ -127,5 +130,23 @@ $tomorrow  = mktime (0, 0, 0, date("m")  , date("d")+1, date("Y"));
 
 		<script type="text/javascript" src="dist/js/bundle.js" charset="utf-8"></script>
 		<script type="text/javascript" src="dist/plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script>
+			function initMap() {
+				var mapDiv = document.getElementById('map');
+				var map = new google.maps.Map(mapDiv, {
+					center: {lat: -20.985723, lng: -47.657543},
+					zoom: 16
+				});
+
+				var image = 'http://tamaraejoaomilton/dist/img/general/heart.png';
+				var beachMarker = new google.maps.Marker({
+					position: {lat: -20.985723, lng: -47.657543},
+					map: map,
+					icon: image
+				});
+			}
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
 	</body>
 </html>

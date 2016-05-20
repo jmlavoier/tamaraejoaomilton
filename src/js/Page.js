@@ -41,6 +41,7 @@ class Page {
 		this.elMinutes.html(minutes);
 		this.elSeconds.html(seconds);
 	}
+
 }
 
 export default Page;
