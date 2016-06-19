@@ -62,7 +62,7 @@ $tomorrow  = mktime (0, 0, 0, date("m")  , date("d")+1, date("Y"));
 					</div>
 					<div class="col-sm-4 gift-list">
 						<span>
-							<a href="http://lista.havan.com.br/Convidado/ItensLista/1/10257048">
+							<a href="https://lista.havan.com.br/Convidado/ItensLista/1/10482522">
 								<img src="dist/img/general/havan.jpg" class="img-responsive img-circle">
 							</a>
 						</span>

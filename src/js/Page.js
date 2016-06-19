@@ -16,7 +16,7 @@ class Page {
 	}
 
 	initCalcLeftTime(){
-		let target_date = new Date("2016-08-27T17:00:00-0300").getTime();
+		let target_date = new Date("2016-08-27T15:30:00-0300").getTime();
 
         setInterval(this.renderLeftTime, 1000, target_date);
 	}

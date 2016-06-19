@@ -21,6 +21,7 @@
     "gulp-util": "^3.0.7",
     "node-sprite-generator": "^0.10.2",
     "path": "^0.12.7",
+    "photoswipe": "^4.1.1",
     "sprity": "^1.0.8",
     "sprity-sass": "^1.0.4",
     "uglify-js": "^2.6.2",
